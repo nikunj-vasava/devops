@@ -1,1 +1,5 @@
 mysqldump -u root -p mydatabase > /home/myuser/database-dump.sql
+
+
+
+https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-and-reset-a-root-password-in-mysql
