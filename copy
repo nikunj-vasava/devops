@@ -1,1 +1,12 @@
 https://www.mysqltutorial.org/import-csv-file-mysql-table/
+
+
+
+It's because the server variable local_infile is set to FALSE|0. Refer from the document.
+
+You can verify by executing:
+
+SHOW VARIABLES LIKE 'local_infile';
+If you have SUPER privilege you can enable it (without restarting server with a new configuration) by executing:
+
+SET GLOBAL local_infile = 1;
