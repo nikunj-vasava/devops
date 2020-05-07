@@ -1,0 +1,2 @@
+# remove fail ppa on apt-get update
+sudo add-apt-repository --remove ppa:upubuntu-com/web
