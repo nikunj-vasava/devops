@@ -1,4 +1,5 @@
 sudo apt-get install libpq-dev
+sudo apt install postgresql postgresql-contrib
 
 #PG Dump remote
 
