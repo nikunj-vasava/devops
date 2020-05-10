@@ -7,6 +7,7 @@ pg_dump -h emrplatfa.us-east-2.rds.amazonaws.com -Fc -o -U db_user data_base_nam
 
 
 psql -U db_user db_name < dump_name.sql    # restore
+pg_restore -U postgres -d "$new_db" "$db_dump_file"
 
 
 sudo -u postgres createuser chris -s
