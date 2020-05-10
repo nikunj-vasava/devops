@@ -25,6 +25,8 @@ sudo apt-get update
 
 passenger-config about ruby-command
 
+sudo vi /etc/nginx/passenger.conf
+
 sudo nano /etc/nginx/sites-enabled/myapp.conf
 
 server {
@@ -38,5 +40,7 @@ server {
     passenger_enabled on;
     passenger_ruby /path-to-ruby;
 }
+
+sudo rm /etc/nginx/sites-enabled/default
 
 sudo service nginx restart
