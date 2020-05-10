@@ -9,5 +9,11 @@ pg_dump -h emrplatfa.us-east-2.rds.amazonaws.com -Fc -o -U db_user data_base_nam
 psql -U db_user db_name < dump_name.sql    # restore
 
 
+sudo -u postgres createuser chris -s
+
+# If you would like to set a password for the user, you can do the following
+sudo -u postgres psql
+postgres=# \password chris
+
 #docker for pgadmin4
 docker run -p 8080:80 -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com' -e 'PGADMIN_DEFAULT_PASSWORD=SuperSecret' -d dpage/pgadmin4
