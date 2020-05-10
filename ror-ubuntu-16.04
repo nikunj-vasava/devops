@@ -17,3 +17,6 @@ ruby -v
 gem install bundler
 
 ssh-keygen
+
+sudo apt-get install libpq-dev
+sudo apt install postgresql postgresql-contrib
