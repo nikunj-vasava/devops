@@ -16,6 +16,18 @@ sudo -u postgres psql
 postgres=# \password chris
 postgres=# CREATE DATABASE testdb;
 
+**********************************************************************************************************
+#psql: FATAL: Peer authentication failed for user
+/etc/postgresql/9.5/main/pg_hba.conf
+The problem is still your pg_hba.conf file (/etc/postgresql/9.1/main/pg_hba.conf*).
+This line:
+local   all             postgres                                peer
+Should be:
+local   all             postgres                                md5
+* If you can't find this file, running locate pg_hba.conf should show you where the file is.
+After altering this file, don't forget to restart your PostgreSQL server. If you're on Linux, that would be 
+sudo service postgresql restart.
+******************************************************************************************************************
 
 #docker for pgadmin4
 docker run -p 8080:80 -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com' -e 'PGADMIN_DEFAULT_PASSWORD=SuperSecret' -d dpage/pgadmin4
