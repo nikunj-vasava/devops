@@ -20,6 +20,8 @@ sudo service vsftpd status
 
 sudo adduser bacancydev
 
+sudo nano /etc/vsftpd.userlist
+
 sudo chown root:root /home/bacancydev
 
 sudo usermod --home /var/www/html/test-dir/ bacancydev
