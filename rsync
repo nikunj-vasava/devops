@@ -1,0 +1,1 @@
+rsync -a -P --exclude-from='exclude-file.txt' /home/homeideas/public_html homeideasinfo.com@3.232.245.252:/home/homeideasinfo.com/homeideasinfo.com/
