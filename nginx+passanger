@@ -19,6 +19,8 @@ sudo vi /etc/nginx/nginx.conf
 
 sudo service nginx restart
 
+# https://www.phusionpassenger.com/library/config/nginx/reference/#passenger_app_env #development
+
 sudo /usr/bin/passenger-config validate-install
 
 sudo apt-get update
