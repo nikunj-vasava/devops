@@ -1,0 +1,11 @@
+Clean Ubuntu 16.04.5 LTS (GNU/Linux 4.4.0-142-generic x86_64)
+
+/var/www/current/chartgenerator$ curl -sL https://deb.nodesource.com/setup_10.x | bash -
+
+/var/www/current/chartgenerator$ apt update
+
+/var/www/current/chartgenerator$ apt-get install -y nodejs
+
+/var/www/current/chartgenerator$ apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
+
+/var/www/current/chartgenerator$ npm install --production
