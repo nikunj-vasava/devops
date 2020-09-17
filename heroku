@@ -1,0 +1,20 @@
+#create heroku app
+heroku create coachingzone
+
+Add database: heroku addons:add heroku-postgresql
+
+
+#deploy current branch on heroku master
+git config remote.heroku.push +HEAD:refs/heads/master
+git push heroku +HEAD:master
+
+
+heroku run rake db:migrate
+
+
+#run heroku console task
+
+heroku run yarn add bootstrap
+
+#heroku logs
+ heroku logs --tail
