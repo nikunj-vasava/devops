@@ -1,0 +1,10 @@
+sudo apt-get install supervisor
+sudo service supervisor restart
+
+sudo supervisorctl reread
+
+sudo supervisorctl update
+
+supervisorctl
+
+supervisor> status
