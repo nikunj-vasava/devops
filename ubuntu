@@ -1,0 +1,2 @@
+#change ubuntu host name
+sudo hostnamectl set-hostname master
