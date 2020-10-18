@@ -1,0 +1,21 @@
+More at : https://www.google.com/get/noto/help/emoji/
+p@p:~$ printf '\U1F6D1\n'
+🛑
+p@p:~$ printf '\U1F525\n'
+🔥
+p@p:~$ printf '\U26D4\n'
+⛔
+
+
+echo $'\e[1;33m'Welcome to linux hint$'\e[0m'
+Welcome to linux hint
+p@p:~$ Red=$'\e[1;31m'
+p@p:~$ Green=$'\e[1;32m'
+p@p:~$ Blue=$'\e[1;34m'
+p@p:~$ echo "$Blue I like chocolate cake "
+ I like chocolate cake 
+p@p:~$ echo "$Green I like chocolate cake "
+ I like chocolate cake 
+p@p:~$ echo "$Red I like chocolate cake "
+ I like chocolate cake 
+
