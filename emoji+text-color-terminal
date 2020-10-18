@@ -1,4 +1,5 @@
-More at : https://www.google.com/get/noto/help/emoji/
+More at : https://www.google.com/get/noto/help/emoji/  and https://unicode-table.com/en/
+
 p@p:~$ printf '\U1F6D1\n'
 🛑
 p@p:~$ printf '\U1F525\n'
